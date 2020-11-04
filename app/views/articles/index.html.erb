@@ -3,7 +3,6 @@
 <%= link_to 'New article', new_article_path %>
 
 <table>
-
   <tr>
     <th>Title</th>
     <th>Text</th>
@@ -18,9 +17,8 @@
       <td><%= link_to 'Show', article_path(article) %></td>
       <td>
         <%= link_to 'Destroy', article_path(article), method: :delete,
-        data: {confirm: 'Areyou sure?'} %>
+        data: {confirm: 'Are you sure?'} %>
       </td>
     </tr>
   <% end %>
-
 </table>
